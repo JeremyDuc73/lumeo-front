@@ -11,7 +11,7 @@ const { isWide } = useLayout();
                 <div class="relative z-20">
                     <Navbar />
                     <div class="mt-8 lg:mt-24 flex flex-col items-center pb-20 px-4">
-                        <IconShapesGenesisLogo class="w-1/2 sm:w-1/4 lg:w-[396px]" />
+                        <IconLogosLumeo class="w-1/2 sm:w-1/4 lg:w-[396px]" />
                         <h1 class="mt-4 lg:mt-16 text-4xl lg:text-6xl font-semibold title !leading-normal text-center">Something gone wrong!</h1>
                         <p class="mt-4 text-base lg:text-xl text-white/64 text-center">The page you were looking for doesn’t exist.</p>
                         <NuxtLink to="/" class="button-regular mt-8 px-8"> Go to home </NuxtLink>

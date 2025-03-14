@@ -19,6 +19,7 @@
         "@nuxt/image": "^1.8.1",
         "@pinia/nuxt": "^0.10.1",
         "@primevue/themes": "^4.2.5",
+        "@stripe/stripe-js": "^6.0.0",
         "embla-carousel-vue": "^8.5.1",
         "nuxt": "^3.14.1592",
         "pinia": "^3.0.1",

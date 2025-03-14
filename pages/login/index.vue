@@ -64,7 +64,7 @@ const checked = ref(false);
                             <div
                                 class="flex items-center justify-center border border-white/8 w-[5.5rem] h-[5.5rem] mx-auto rounded-3xl bg-white/8 backdrop-blur-[48px] shadow-[0px_2px_5px_0px_rgba(255,255,255,0.06)_inset,0px_12px_20px_0px_rgba(0,0,0,0.06)]"
                             >
-                                <IconShapesGenesisLogo class="w-10 h-10" />
+                                <IconLogosLumeo class="w-30 h-30" />
                             </div>
                             <h1 class="text-3xl lg:text-6xl font-semibold text-surface-0 text-center mt-8">Se Connecter</h1>
                             <p class="text-xl text-white/64 text-center mt-6 max-w-sm mx-auto">Entrez vos identidiants pour avoir accès à toute l'application.</p>
@@ -102,12 +102,12 @@ const checked = ref(false);
                                             <span class="text-white/64">Se souvenir de moi</span>
                                         </label>
                                     </div>
-                                    <NuxtLink to="/second-pages/reset-password" class="text-white/72 hover:text-white/90 transition-all"> Mot de passe oublié ? </NuxtLink>
+                                    <NuxtLink to="/" class="text-white/72 hover:text-white/90 transition-all"> Mot de passe oublié ? </NuxtLink>
                                 </div>
                                 <button type="submit" class="button-regular w-full py-3">Se connecter</button>
                                 <div class="text-center">
                                     <span class="text-white/64">Pas encore inscrit ? </span>
-                                    <NuxtLink to="register" class="text-surface-0 font-semibold hover:opacity-90 transition-opacity"> Créer un compte </NuxtLink>
+                                    <NuxtLink to="/register" class="text-surface-0 font-semibold hover:opacity-90 transition-opacity"> Créer un compte </NuxtLink>
                                 </div>
                             </div>
                         </form>

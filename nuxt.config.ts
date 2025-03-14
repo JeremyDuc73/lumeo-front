@@ -61,7 +61,8 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             apiBase: '',
-            serverBase: ''
+            serverBase: '',
+            stripePublicKey: ''
         }
     },
     app: {

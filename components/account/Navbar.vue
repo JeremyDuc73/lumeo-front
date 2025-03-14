@@ -12,15 +12,15 @@ const accountNavData = [
     },
     {
         label: 'Données personnelles',
-        to: '/second-pages/account/privacy-security'
+        to: '/profile/details'
     },
     {
         label: 'Paiements & Factures',
-        to: '/second-pages/account/subscription-billing'
+        to: '/profile/orders'
     },
     {
         label: 'Support',
-        to: '/second-pages/account/support'
+        to: '/profile/details'
     }
 ];
 </script>
