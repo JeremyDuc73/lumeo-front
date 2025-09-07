@@ -11,16 +11,16 @@ const accountNavData = [
         to: '/profile/details'
     },
     {
-        label: 'Données personnelles',
-        to: '/profile/details'
-    },
-    {
         label: 'Paiements & Factures',
         to: '/profile/orders'
     },
     {
-        label: 'Support',
-        to: '/profile/details'
+        label: 'Mes services',
+        to: '/profile/services'
+    },
+    {
+        label: 'Réservations',
+        to: '/profile/reservations'
     }
 ];
 </script>

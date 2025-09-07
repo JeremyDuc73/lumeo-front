@@ -5,6 +5,21 @@ html {
     font-size: 14px;
 }
 
+/* Ensure PrimeVue overlays are always on top of any page widgets (theme switcher, navbar, etc.) */
+.p-toast {
+    z-index: 2147483647 !important; /* Max 32-bit int */
+    position: fixed !important;
+}
+
+.p-confirm-dialog {
+    z-index: 2147483600 !important;
+}
+
+.p-component-overlay,
+.p-confirm-dialog-mask {
+    z-index: 2147483590 !important;
+}
+
 :root {
     --background: var(--p-surface-0);
     --foreground: var(--p-surface-950);

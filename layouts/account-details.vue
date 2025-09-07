@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import AppConfig from './AppConfig.vue';
+import ConfirmDialog from 'primevue/conf irmdialog';
+import Toast from 'primevue/toast';
 
 const { isWide } = useLayout();
 </script>
@@ -18,5 +20,8 @@ const { isWide } = useLayout();
             </div>
         </div>
     </AnimatedContainer>
+    <Toast appendTo="body" position="top-right" :pt="{ root: { class: 'z-[2147483647]' } }" />
+    <ConfirmDialog appendTo="body" group="global" :pt="{ root: { class: 'z-[2147483600]' }, mask: { class: 'z-[2147483590]' } }" />
+    <Footer />
     <AppConfig />
 </template>

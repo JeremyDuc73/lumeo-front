@@ -60,9 +60,12 @@ export default defineNuxtConfig({
     devtools: { enabled: false },
     runtimeConfig: {
         public: {
-            apiBase: '',
+            // Defaults for local dev; override in prod via env vars:
+            // NUXT_PUBLIC_API_BASE, NUXT_PUBLIC_MERCURE_HUB, NUXT_PUBLIC_STRIPE_PUBLIC_KEY
+            apiBase: process.env.NUXT_PUBLIC_API_BASE || 'https://localhost:8000/api',
+            mercureHub: process.env.NUXT_PUBLIC_MERCURE_HUB || 'http://localhost:9090/.well-known/mercure',
             serverBase: '',
-            stripePublicKey: ''
+            stripePublicKey: process.env.NUXT_PUBLIC_STRIPE_PUBLIC_KEY || ''
         }
     },
     app: {

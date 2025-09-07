@@ -36,7 +36,8 @@ async function buyPack(amount: number, coins: number) {
         });
         window.location.href = response.checkoutUrl;
     } catch (error) {
-        console.log(error);
+        // eslint-disable-next-line no-console
+        console.error(error);
     }
 }
 </script>
@@ -65,7 +66,7 @@ async function buyPack(amount: number, coins: number) {
                                         <span class="title text-6xl font-semibold">{{ item.price }} €</span>
                                         <span class="py-2 text-2xl text-white/64">= {{ item.coins }} LumCoins</span>
                                     </div>
-                                    <button @click="buyPack(item.price, item.coins)" class="button-regular">Acheter</button>
+                                    <button class="button-regular" @click="buyPack(item.price, item.coins)">Acheter</button>
                                 </div>
                             </AnimatedContainer>
                         </div>
@@ -80,8 +81,18 @@ async function buyPack(amount: number, coins: number) {
                                     <span class="title text-6xl font-semibold">{{ price }} €</span>
                                     <span class="py-2 text-2xl text-white/64">= {{ price * 20 }} LumCoins</span>
                                 </div>
-                                <Slider v-model="price" :min="10" :max="300" :step="5" />
-                                <button @click="buyPack(price, price * 20)" class="button-regular">Acheter</button>
+                                <Slider
+                                    v-model="price"
+                                    :min="10"
+                                    :max="300"
+                                    :step="5"
+                                    :pt="{
+                                        root: 'bg-white/20 dark:bg-white/20',
+                                        range: 'bg-blue-500',
+                                        handle: 'bg-blue-600 border-blue-600 shadow-[0_0_0_3px_rgba(59,130,246,0.25)] hover:shadow-[0_0_0_5px_rgba(59,130,246,0.25)]'
+                                    }"
+                                />
+                                <button class="button-regular" @click="buyPack(price, price * 20)">Acheter</button>
                             </div>
                         </AnimatedContainer>
                     </div>

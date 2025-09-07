@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRouter } from '#vue-router';
-import { useAuthStore } from '@/store/auth';
+import { useAuthStore } from '~/store/auth';
 
 const { isWide } = useLayout();
 
@@ -67,7 +67,7 @@ const checked = ref(false);
                                 <IconLogosLumeo class="w-30 h-30" />
                             </div>
                             <h1 class="text-3xl lg:text-6xl font-semibold text-surface-0 text-center mt-8">Se Connecter</h1>
-                            <p class="text-xl text-white/64 text-center mt-6 max-w-sm mx-auto">Entrez vos identidiants pour avoir accès à toute l'application.</p>
+                            <p class="text-xl text-white/64 text-center mt-6 max-w-sm mx-auto">Entrez vos identifiants pour avoir accès à toute l'application.</p>
                             <div class="flex flex-col gap-8 mt-16">
                                 <div class="flex flex-col gap-2">
                                     <label for="signin_email" class="text-surface-0"> Adresse mail </label>

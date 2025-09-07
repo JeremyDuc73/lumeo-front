@@ -49,7 +49,6 @@ const { isWide } = useLayout();
                         <div class="title bg-[linear-gradient(180deg,#FFF_-16.99%,rgba(255,255,255,0.00)_100%)] text-8xl lg:text-[17rem] leading-none lg:-mt-14">Genesis</div>
                     </div>
                 </div>
-                <Navbar />
             </div>
         </div>
     </AnimatedContainer>

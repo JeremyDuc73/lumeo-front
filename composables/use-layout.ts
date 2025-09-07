@@ -1,7 +1,7 @@
 import { reactive } from 'vue';
 
 const layoutConfig = reactive({
-    primary: 'teal',
+    primary: 'blue',
     surface: 'slate',
     darkTheme: false,
     heroContainerType: 'wide'
