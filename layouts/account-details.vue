@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import AppConfig from './AppConfig.vue';
-import ConfirmDialog from 'primevue/conf irmdialog';
+import ConfirmDialog from 'primevue/confirmdialog';
 import Toast from 'primevue/toast';
 
 const { isWide } = useLayout();
