@@ -106,6 +106,19 @@ export default defineNuxtConfig({
             }
         }
     },
+    // Static generation: only prerender safe public routes and do not crawl links to private pages
+    nitro: {
+        prerender: {
+            crawlLinks: false,
+            routes: ['/', '/services', '/login', '/register']
+        }
+    },
+    routeRules: {
+        '/profile': { prerender: false },
+        '/profile/**': { prerender: false },
+        '/payment-success': { prerender: false },
+        '/services/**': { prerender: false }
+    },
     postcss: {
         plugins: {
             tailwindcss: {},
